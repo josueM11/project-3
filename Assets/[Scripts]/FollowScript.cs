@@ -21,9 +21,8 @@ public class FollowScript : MonoBehaviour
 
         Debug.Log("FOLLOW THE HUMAN!!");
 
-
-        RotateTowardsTarget();
         Dog.position = Vector3.MoveTowards(Dog.position, Human, distance);
+        RotateTowardsTarget();
     }
 
     private void RotateTowardsTarget()

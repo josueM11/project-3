@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Duplicator : MonoBehaviour
 {
-    public GameObject Bed;
+    public GameObject Sphere_Model;
 
     public Transform spawn;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +16,6 @@ public class Duplicator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Instantiate(Bed, spawn.position, spawn.rotation);
+        Instantiate(Sphere_Model, spawn.position, spawn.rotation);
     }
 }

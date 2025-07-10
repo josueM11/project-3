@@ -13,7 +13,6 @@ public class NerfScript : MonoBehaviour
         if (DartPrefab == null)
         {
             Debug.Log("empty...");
-
             return null;
         }
         #endregion
