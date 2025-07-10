@@ -23,6 +23,7 @@ public class FollowScript : MonoBehaviour
 
 
         RotateTowardsTarget();
+        Dog.position = Vector3.MoveTowards(Dog.position, Human, distance);
     }
 
     private void RotateTowardsTarget()

@@ -13,6 +13,7 @@ public class NerfScript : MonoBehaviour
         if (DartPrefab == null)
         {
             Debug.Log("empty...");
+
             return null;
         }
         #endregion
@@ -20,7 +21,7 @@ public class NerfScript : MonoBehaviour
         GameObject Dart = null;
 
         Debug.Log("LAUNCH THE PROJECTILE!");
-
+        Dart = Instantiate(DartPrefab, SpawnLocation.position, SpawnLocation.rotation);
         return Dart;
     }
 
