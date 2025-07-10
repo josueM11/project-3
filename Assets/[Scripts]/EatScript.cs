@@ -7,7 +7,7 @@ public class EatScript : MonoBehaviour
         if (other.gameObject.CompareTag("Food"))
         {
             Debug.Log("Destroy food here.");
-
+            Destroy(other.gameObject);
             PlayEatSoundEffect();
 
             CreateFoodCrumbs();
