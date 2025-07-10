@@ -20,7 +20,7 @@ public class CorgiAI : MonoBehaviour
         {
             //Debug.Log("DISTANCE: " + Vector3.Distance(transform.position, playerFollow.target.position));
 
-            if (Vector3.Distance(transform.position, playerFollow.Target.position) < 1.0625f)
+            if (Vector3.Distance(transform.position, playerFollow.Target.position) < 1.0625f) // the float was originally 1.0625f
             {
                 isPlayerNearby = true;
 

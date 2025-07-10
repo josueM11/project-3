@@ -7,7 +7,7 @@ public class FollowScript : MonoBehaviour
     private Vector3 Human;
 
     private Transform Dog;
-
+    
 
     void Update()
     {
@@ -18,10 +18,11 @@ public class FollowScript : MonoBehaviour
         // calculate distance to move
         float distance = Speed * Time.deltaTime; 
 
-
+        
         Debug.Log("FOLLOW THE HUMAN!!");
 
         Dog.position = Vector3.MoveTowards(Dog.position, Human, distance);
+
         RotateTowardsTarget();
     }
 
